@@ -11,3 +11,10 @@ export type Prodact = {
       categoryId: number
       image: string
 }
+
+export type BasketItem = {
+    id: number
+    productId: number
+    quantity: number
+    product: Prodact
+}
