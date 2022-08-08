@@ -8,7 +8,7 @@ function Header() {
       className="header"
       style={{
         // @ts-ignore
-        ["--random-colour"]: `var(--${randomColor})`
+        ["--random-colour"]: `var(--${randomColor})`,
       }}
     >
       <div className="header__logo" style={{ color: randomColor }}>
@@ -17,12 +17,10 @@ function Header() {
       <nav className="header__nav">
         <ul>
           <li>
-            <Link to='/products'>
-            Home</Link>
+            <Link to="/products">Home</Link>
           </li>
           <li>
-            {/* Create here a link to this page */}
-            Categories
+            <Link to="/categories">Categories</Link>
           </li>
           <li>
             {/* Create here a link to this page */}
